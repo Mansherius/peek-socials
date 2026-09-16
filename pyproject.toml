@@ -1,0 +1,25 @@
+[project]
+name = "peek-socials"
+version = "0.1.0"
+description = "A new kind of social media to bring back connection, combat dark patterns, and simplify your online presence"
+readme = "README.md"
+authors = [
+    { name = "Mansher Singh", email = "mansherius@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "sqlalchemy>=2.0.54",
+]
+
+[project.scripts]
+peek-socials = "peek_socials:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.7",
+]
