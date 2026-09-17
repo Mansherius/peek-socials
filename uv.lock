@@ -200,6 +200,7 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "fastapi" },
+    { name = "pytest" },
     { name = "sqlalchemy" },
     { name = "uvicorn", extra = ["standard"] },
 ]
@@ -213,6 +214,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "fastapi", specifier = ">=0.141.1" },
+    { name = "pytest", specifier = ">=9.1.1" },
     { name = "sqlalchemy", specifier = ">=2.0.54" },
     { name = "uvicorn", extras = ["standard"], specifier = ">=0.53.0" },
 ]
